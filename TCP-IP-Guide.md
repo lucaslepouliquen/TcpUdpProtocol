@@ -180,11 +180,11 @@ Client                    Server
 - Pas de contrôle de flux (négatif)
 
 **Use cases** :
-- 🎮 Gaming (latence critique)
-- 📞 VoIP (temps réel)
-- 📺 Streaming vidéo
-- 🔍 DNS (requêtes courtes)
-- 📊 Métriques (tolérance perte)
+- Gaming (latence critique)
+- VoIP (temps réel)
+- Streaming vidéo
+- DNS (requêtes courtes)
+- Métriques (tolérance perte)
 
 ---
 
@@ -469,7 +469,7 @@ Réutilise des connexions TCP établies au lieu d'en créer de nouvelles.
 
 ### 10.3 Overlay vs Underlay Networks
 
-#### 🔹 Overlay Networks (Encapsulation)
+#### Overlay Networks (Encapsulation)
 
 **Technique** : Encapsulation paquets Pod dans UDP/IP (VXLAN)
 
@@ -554,7 +554,7 @@ Pour un cluster avec :
 
 #### Modes kube-proxy
 
-##### 1️⃣ iptables (défaut)
+##### iptables (défaut)
 
 ```bash
 # Règles iptables créées automatiquement
@@ -573,7 +573,7 @@ iptables -t nat -L -n | grep <service-name>
 - Scalabilité limitée (>1000 services)
 - Debugging difficile
 
-##### 2️⃣ IPVS (IP Virtual Server)
+##### IPVS (IP Virtual Server)
 
 ```bash
 # Voir les services IPVS
@@ -813,7 +813,7 @@ az aks create \
 
 ### 14.1 Outils Essentiels
 
-#### 🔧 tcpdump
+#### tcpdump
 
 Capture paquets réseau au niveau interface.
 
@@ -1086,7 +1086,7 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 Error creating service: no IPs available in range
 ```
 
-#### 🔍 Diagnostic
+#### Diagnostic
 
 ```bash
 # Compter les Services existants
@@ -1117,7 +1117,7 @@ az aks create \
   --dns-service-ip 10.96.0.10
 ```
 
-#### 🛡️ Prévention
+#### Prévention
 
 **Calcul dimensionnement** :
 ```
@@ -1137,7 +1137,7 @@ Marge sécurité : 2x
 - 502 Bad Gateway
 - Latence élevée
 
-#### 🔍 Causes Possibles
+#### Causes Possibles
 
 ##### 1. Exhaustion SNAT
 
@@ -1547,7 +1547,7 @@ spec:
   *Gratuit, ~900 pages, très complet*  
   [ibm.com/redbooks](https://www.redbooks.ibm.com/abstracts/gg243376.html)
 
-### 🎓 Kubernetes Networking
+### Kubernetes Networking
 
 - **CNI Specification**  
   [github.com/containernetworking/cni](https://github.com/containernetworking/cni)
