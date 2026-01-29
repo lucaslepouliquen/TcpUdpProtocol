@@ -97,6 +97,8 @@ Application → Segment (TCP/UDP) → Paquet (IP) → Trame (Ethernet)
 
 **Formule rapide** : `2^(32-masque) - 2` (network + broadcast)
 
+Masque de sous-réseau (subnet mask) : Un nombre de 32 bits qui divise une adresse IP en deux parties : la partie réseau et la partie hôte. Il est composé d'une séquence de bits consécutifs à 1 (partie réseau) suivie de bits à 0 (partie hôte). Peut être exprimé en notation décimale (ex: 255.255.255.0) ou en notation CIDR /masque où "masque" = nombre de bits à 1 (ex: /24 = 24 bits à 1).
+
 Network address (adresse réseau) : La première adresse IP d'un réseau, où tous les bits de la partie hôte sont à 0. Elle identifie le réseau lui-même et ne peut pas être assignée à un hôte. Exemple : 192.168.1.0/24
 
 Broadcast address (adresse de diffusion) : La dernière adresse IP d'un réseau, où tous les bits de la partie hôte sont à 1. Elle permet d'envoyer un paquet à tous les hôtes du réseau simultanément et ne peut pas être assignée à un hôte individuel. Exemple : 192.168.1.255/24
