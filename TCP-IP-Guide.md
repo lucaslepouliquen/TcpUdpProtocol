@@ -97,6 +97,10 @@ Application → Segment (TCP/UDP) → Paquet (IP) → Trame (Ethernet)
 
 **Formule rapide** : `2^(32-masque) - 2` (network + broadcast)
 
+Network address (adresse réseau) : La première adresse IP d'un réseau, où tous les bits de la partie hôte sont à 0. Elle identifie le réseau lui-même et ne peut pas être assignée à un hôte. Exemple : 192.168.1.0/24
+
+Broadcast address (adresse de diffusion) : La dernière adresse IP d'un réseau, où tous les bits de la partie hôte sont à 1. Elle permet d'envoyer un paquet à tous les hôtes du réseau simultanément et ne peut pas être assignée à un hôte individuel. Exemple : 192.168.1.255/24
+
 | CIDR | Masque | IPs totales | IPs utilisables |
 |------|--------|-------------|-----------------|
 | /24 | 255.255.255.0 | 256 | 254 |
